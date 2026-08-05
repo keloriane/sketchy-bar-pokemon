@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Minimal standalone SketchyBar config whose only real job is hosting the
+# "walker" item. If you already run SketchyBar, don't use this file — instead
+# copy plugins/walker.sh + sprites/ into your config and source items/walker.sh
+# from your own sketchybarrc.
+
+CONFIG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export CONFIG_DIR
+
+source "$CONFIG_DIR/items/walker.sh"
+
+sketchybar --bar height=32 \
+                 position=top \
+                 blur_radius=20 \
+                 color=0xff1a1b26 \
+           --default icon.font="SF Pro:Bold:14.0" \
+                     label.font="SF Pro:Bold:14.0" \
+                     icon.color=0xffcad3f5 \
+                     label.color=0xffcad3f5 \
+                     padding_left=5 \
+                     padding_right=5
+
+sketchybar --update
