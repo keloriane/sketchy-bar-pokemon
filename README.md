@@ -64,3 +64,4 @@ rm ~/.config/sketchybar   # only if it's the symlink install.sh created
 Code in this repo is MIT (see `LICENSE`). The bundled placeholder sprite is
 original pixel art. If you swap in a sprite sheet extracted from a game you
 own, that asset is not covered by this repo's license — don't redistribute it.
+# sketchy-bar-pokemon
